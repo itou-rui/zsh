@@ -1,3 +1,7 @@
+export PATH=/bin:/usr/bin:/usr/local/bin:$PATH
+
+export PATH=$HOME/.nodebrew/current/bin:$HOME/.homebrew/bin:$HOME/.local/bin:$HOME/bin:$PATH
+
 setopt interactivecomments
 
 export TERM=screen-256color
@@ -30,10 +34,6 @@ function __check_rvm() {
 }
 add-zsh-hook chpwd __check_rvm
 
-export PATH=bin:$PATH
-export PATH=~/bin:$PATH
-export PATH=~/.local/bin:$PATH
-
 # Homebrew
 export HOMEBREW_PREFIX="$HOME/.homebrew"
 export PATH="$HOMEBREW_PREFIX/bin:$PATH"
@@ -43,7 +43,7 @@ export HOMEBREW_CELLAR="$HOMEBREW_PREFIX/Cellar"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Docker
-export PATH=$HOME/.docker/bin:$PAT
+export PATH=$HOME/.docker/bin:$PATH
 
 setopt magic_equal_subst
 
