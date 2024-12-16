@@ -42,6 +42,9 @@ export HOMEBREW_CELLAR="$HOMEBREW_PREFIX/Cellar"
 # Nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# Docker
+export PATH=$HOME/.docker/bin:$PAT
+
 setopt magic_equal_subst
 
 load_files_in_directory() {
